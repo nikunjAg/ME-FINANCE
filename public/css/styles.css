@@ -1,0 +1,434 @@
+:root {
+    --primary-color: #3cb371;
+    --text-color: white;
+    --btn-outline: #f0c23a;
+    --btn-hover-color: #dfb538de;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: "Roboto", "Arial", sans-serif;
+}
+
+/**********************
+// Reusable
+**********************/
+
+li {
+    list-style-position: inside;
+}
+
+.line {
+    width: 100px;
+    border: 1px solid var(--primary-color);
+    margin: 1% auto 4% auto;
+}
+
+hr {
+    margin: 0%;
+}
+
+section {
+    height: 100vh;
+    padding: 3%;
+}
+
+/**********************
+// Header
+**********************/
+header {
+    overflow: hidden;
+    height: 100vh;
+    background-image: url("/css/img/backgroundImage.jpg");
+    background: linear-gradient(#57575780, #57575780),
+        url("/css/img/backgroundImage.jpg");
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+}
+
+.custom-navbar {
+    padding-top: 2rem;
+    background-color: transparent;
+    color: black;
+}
+
+.custom-navbar .navbar-toggler {
+    /* border: 1px solid rgba(0, 0, 0, 0.7); */
+    /* stroke: rgba(0, 0, 0, 0.7); */
+    /* border-color: rgba(0, 0, 0, 0.7); */
+}
+.custom-navbar .navbar-toggler-icon {
+  background-image: url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 32 32' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='rgba(255,255,255, 0.7)' stroke-width='3' stroke-linecap='round' stroke-miterlimit='10' d='M4 8h24M4 16h24M4 24h24'/%3E%3C/svg%3E");
+}
+
+.custom-navbar .navbar-brand {
+    color: var(--text-color);
+    font-size: 1.5rem;
+    font-weight: 700;
+}
+
+.custom-navbar > div ul li a {
+    color: var(--text-color);
+}
+
+.custom-navbar > div ul li a {
+    border-bottom: 2px solid transparent;
+    transition: border-color 0.4s ease;
+}
+
+.custom-navbar > div ul li a:hover {
+    border-color: var(--btn-outline);
+}
+
+.centerContent {
+    text-align: center;
+    padding-top: 25%;
+    color: var(--text-color);
+}
+
+.centerContent h1 {
+    font-size: 5rem;
+    font-weight: 700;
+}
+
+.centerContent p {
+    font-size: 1.5rem;
+    font-weight: 300;
+}
+
+.centerContent .headerBtn {
+    color: var(--btn-outline);
+}
+
+.centerContent .headerBtn:hover {
+    background-color: var(--btn-hover-color);
+    color: var(--text-color);
+}
+
+.contentDiv {
+    width: 100vw;
+    height: 100vh;
+}
+
+/*******************
+// Body
+********************/
+
+/*******************
+// Welcome Section
+********************/
+
+.welcome-div {
+    text-align: center;
+}
+
+.welcome-div > h1 {
+    font-weight: 350;
+    letter-spacing: 0.1rem;
+    text-transform: uppercase;
+}
+
+.welcome-div p {
+    font-weight: 300;
+}
+
+.welcome-div .row {
+    padding-top: 4%;
+}
+
+/* All columns */
+.welcome-div .row > div {
+    padding: 20px;
+    text-align: left;
+}
+
+.welcome-div .row > div ul li {
+    list-style-type: var(--primary-color);
+    font-weight: 300;
+}
+
+.welcome-div .row > div i {
+    margin-bottom: 1rem;
+    color: var(--primary-color);
+}
+
+.welcome-div .row > div h1 {
+    font-size: 1.7rem;
+    font-weight: 300;
+}
+
+.welcome-div .row > div p {
+    margin-top: 1rem;
+    font-size: 1rem;
+}
+
+/*******************
+// About Section
+********************/
+
+.about-section {
+    background-image: url("/css/img/owner.jpg") no-repeat center center;
+    background: linear-gradient(#1b1a1a96, #1b1a1a96), url("/css/img/owner.jpg");
+    background-size: cover;
+}
+
+.about-div {
+    text-align: center;
+    color: rgb(238, 238, 238);
+}
+
+.about-content {
+    width: 30%;
+    float: right;
+    text-align: left;
+}
+
+.about-content p {
+    font-size: 1.1rem;
+    text-align: justify;
+    text-justify: inter-word;
+}
+
+.about-content h3 {
+    font-family: "Roboto", "Arial", sans-serif;
+    color: var(--text-color);
+    margin-top: 50px;
+    font-size: 1.5rem;
+    font-style: italic;
+    font-weight: 300;
+    text-align: left;
+    text-justify: initial;
+}
+
+.about-btn {
+    margin-top: 3%;
+}
+
+.about-btn:hover {
+    color: var(--text-color);
+    background-color: var(--btn-hover-color);
+}
+
+/*******************
+// Advice Section
+********************/
+
+.advice-div {
+    text-align: center;
+}
+
+.advice-div .row {
+    padding-top: 5%;
+}
+
+.advice-div .row > div {
+    text-align: left;
+    padding: 20px;
+}
+
+.circle {
+    width: 30%;
+    display: inline-block;
+    color: var(--primary-color);
+    border: 1px solid var(--primary-color);
+    border-radius: 50%;
+    height: 50px;
+    width: 50px;
+    padding-left: 19px;
+    padding-top: 13px;
+    float: left;
+    overflow-y: hidden;
+}
+
+.advice-div .row > div h1 {
+    margin-left: 20%;
+    font-weight: 290;
+}
+
+.advice-div .row > div p {
+    margin-top: 5%;
+}
+
+.advice-div button {
+    margin-top: 5%;
+}
+
+.advice-div button:hover {
+    color: var(--text-color);
+    background-color: var(--btn-hover-color);
+}
+
+
+/*******************
+// Planning Section
+********************/
+
+.planning-div {
+    text-align: center;
+}
+
+.planning-div > .row > div:first-child {
+    margin-top: 10%;
+}
+
+.planning-div > .row > div:last-child {
+    margin-top: 4%;
+}
+
+.tab-pane {
+    text-align: left;
+    font-family: 'Roboto', 'Arial', sans-serif;
+    font-weight: 300;
+}
+
+.planning-div > .row > div:first-child div a {
+    border: 0;
+    border-left: 1.4px solid rgb(187, 187, 187);
+    color: rgb(192, 192, 192);
+    border-radius: 0;
+    padding: 10px 0px 10px 10px;
+    font-size: 0.9rem;
+    font-family: 'Roboto', 'Arial', sans-serif;
+    text-align: left;
+}
+
+.planning-div > .row > div:first-child div a:hover {
+    background-color: transparent;
+    color :rgb(51, 51, 51);
+}
+
+.planning-div > .row > div:first-child div .active {
+    border-color: green;
+    color: rgb(51, 51, 51);
+    background-color: transparent;
+}
+
+/*******************
+// ContactUs Section
+********************/
+
+.contactUs-section {
+    background-color: rgb(243, 242, 242);
+    color: #727272;
+}
+
+.contactUs-section .contactUs-div .line {
+    margin-left: 0%;
+    margin-bottom: 0%;
+}
+
+.contactUs-div .row form button:hover {
+    color: var(--text-color);
+    background-color: var(--btn-hover-color);
+}
+
+.contactUs-div > .row > div {
+    padding-left: 50px;
+    padding-right: 50px;
+}
+
+.contactUs-div .row > div h1,
+h3 {
+    color: black;
+}
+
+.contactUs-div .row div:first-child p {
+    margin-top: 4%;
+}
+
+.contactUs-div .row div:last-child > div hr {
+    margin-bottom: 5%;
+}
+
+.contactUs-div .row div:last-child > div h3 {
+    font-weight: 300;
+    font-size: 1.5rem;
+}
+
+.contactUs-div .row div:last-child .social i {
+    margin-right: 4%;
+}
+
+.contactWays > div {
+    padding-top: 3%;
+}
+
+.contactWays .phone i, .contactWays .address i, .contactWays .openHours i {
+    color: var(--primary-color);
+}
+
+.contactWays > div p {
+    margin: 0%;
+    margin-left: 4.5%;
+    margin-bottom: 0%;
+    margin-top: 0%;
+    display: inline-block;
+}
+
+.contactWays > div .extraPadding {
+    margin-left: 9.8%;
+}
+
+/*******************
+// Footer Section
+********************/
+
+footer {
+    background-color: #332f2f;
+    overflow: hidden;
+    padding: 5% 5% 2% 5%;
+}
+
+.footerDiv h2 {
+    color: var(--text-color);
+}
+
+.footerDiv .col p {
+    color: rgb(129, 126, 126);
+}
+
+.footerDiv > .row > div:last-child {
+    text-align: center;
+    padding-top: 5%;
+}
+
+.footerDiv > .row > div:last-child i {
+    margin-left: 5%;
+}
+
+.footerDiv > .row > div:last-child i:hover {
+    cursor: pointer;
+}
+
+/*******************
+// Utility Classes
+********************/
+
+header .sticky {
+    padding-top: 0.9rem;
+    background-color: white;
+    padding-bottom: 0%;
+    box-shadow: 0 2px 2px #e6e5e5;
+}
+
+header .sticky .navbar-brand {
+    color: black;
+    padding-bottom: 8px;
+    padding-top: 0%;
+}
+
+header .sticky .navbar-toggler-icon {
+    background-image: url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 32 32' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='rgba(0,0,0, 0.7)' stroke-width='3' stroke-linecap='round' stroke-miterlimit='10' d='M4 8h24M4 16h24M4 24h24'/%3E%3C/svg%3E");
+}
+
+header .sticky > div ul li a {
+    color: black;
+    border-bottom: 3px solid transparent;
+}

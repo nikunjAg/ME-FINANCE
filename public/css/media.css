@@ -1,0 +1,52 @@
+@media only screen and (max-width: 1200px) {
+    .welcome-section { height: auto; }
+    .planning-section { height: auto; }
+}
+
+
+@media only screen and (max-width: 992px) {
+    .custom-navbar > div ul li a { display: inline-block; }
+    .custom-navbar > div ul li a:hover { border-color: transparent; }
+    .sticky > div ul li a { display: block; }
+    .sticky > div ul li a:hover {
+        border-color: transparent;
+        background-color: #eeeeee;
+        padding-left: 10px;
+    }
+    .welcome-section { height: auto; }
+    .about-section { height: auto; }
+    /* .contactUs-section { height: auto; } */
+}
+
+
+@media only screen and (max-width: 768px) {
+    .welcome-section { height: auto; }
+    .about-section { height: 100vh; }
+    .about-content { width: 100%; padding: 10px; padding-top: 25%; margin: 0% auto; }
+    .about-content p, .about-content h3 { font-size: 1.3rem; }
+    .advice-section { height: auto; }
+    .contactUs-section { height: auto; }
+    .contactUs-div > .row > div:last-child { margin-top: 5%; }
+}
+
+
+/* @media only screen and (max-width: 576px) {
+    .welcome-section { height: auto; }
+    .about-section { height: auto; }
+    .about-content { width: 100%; padding: 10px; margin: 0% auto; }
+    .about-content p, .about-content h3 { font-size: 1.3rem; }
+} */
+
+@media only screen and (max-width: 576px) {
+    .welcome-section { height: auto; }
+    .custom-navbar { padding-top: 1rem; }
+    .custom-navbar { background-color: transparent; }
+    .contentDiv .container { padding-left: 0; padding-right: 0; }
+    .centerContent { width: 80%; margin: 0 auto;  padding-top: 45%; }
+    .centerContent h1 { font-size: 3.8rem; }
+    .centerContent p, .centerContent button { font-size: 1.2rem; }
+    .advice-section { height: auto; }
+    .about-section { height: 100vh; }
+    .about-content { width: 100%; padding: 10px; padding-top: 25%; margin: 0% auto; }
+    .about-content p, .about-content h3 { font-size: 1.3rem; color: #eeeeee; }
+}
