@@ -8,7 +8,9 @@
 * {
     margin: 0;
     padding: 0;
-    box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+            box-sizing: border-box;
 }
 
 body {
@@ -45,6 +47,10 @@ header {
     overflow: hidden;
     height: 100vh;
     background-image: url("/css/img/backgroundImage.jpg");
+    background: -webkit-linear-gradient(linear, left top, left bottom, from(#57575780), to(#57575780)),
+        url("/css/img/backgroundImage.jpg");
+    background: -moz-linear-gradient(linear, left top, left bottom, from(#57575780), to(#57575780)),
+        url("/css/img/backgroundImage.jpg");
     background: linear-gradient(#57575780, #57575780),
         url("/css/img/backgroundImage.jpg");
     background-size: cover;
@@ -80,6 +86,8 @@ header {
 
 .custom-navbar > div ul li a {
     border-bottom: 2px solid transparent;
+    -webkit-transition: border-color 0.4s ease;
+    -moz-transition: border-color 0.4s ease;
     transition: border-color 0.4s ease;
 }
 
@@ -175,6 +183,8 @@ header {
 
 .about-section {
     background-image: url("/css/img/owner.jpg") no-repeat center center;
+    background: -webkit-linear-gradient(linear, left top, left bottom, from(#1b1a1a96), to(#1b1a1a96)), url("/css/img/owner.jpg");
+    background: -moz-linear-gradient(linear, left top, left bottom, from(#1b1a1a96), to(#1b1a1a96)), url("/css/img/owner.jpg");
     background: linear-gradient(#1b1a1a96, #1b1a1a96), url("/css/img/owner.jpg");
     background-size: cover;
 }
@@ -415,7 +425,9 @@ header .sticky {
     padding-top: 0.9rem;
     background-color: white;
     padding-bottom: 0%;
-    box-shadow: 0 2px 2px #e6e5e5;
+    -webkit-box-shadow: 0 2px 2px #e6e5e5;
+    -moz-box-shadow: 0 2px 2px #e6e5e5;
+            box-shadow: 0 2px 2px #e6e5e5;
 }
 
 header .sticky .navbar-brand {
